@@ -1,0 +1,49 @@
+.str-chat__message-notification {
+  display: block;
+  position: absolute;
+  align-self: center;
+  background: var(--primary-color);
+  border: none;
+  color: var(--white);
+  border-radius: 50px;
+  padding: var(--xxs-p) var(--xs-p);
+  font-size: var(--sm-font);
+  bottom: 10px;
+  z-index: 101;
+
+  &-right {
+    align-self: flex-end;
+  }
+
+  &-scroll-down {
+    cursor: pointer;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-size: 14px auto;
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+    &::before {
+      position: absolute;
+      top: calc(50% - 8px);
+      left: calc(50% - 6px);
+      transform: rotate(-45deg);
+      display: block;
+      width: 12px;
+      height: 12px;
+      content: '';
+      border: 2px solid var(--primary-color);
+      border-width: 0 0 2px 2px;
+    }
+
+    &-unread-count {
+      font-size: 10px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 18px;
+    }
+  }
+}

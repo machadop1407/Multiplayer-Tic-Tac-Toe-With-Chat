@@ -1,0 +1,7 @@
+@include mml-component('error') {
+  display: flex;
+  justify-content: center;
+  padding: $mml-error-spacer;
+  color: $mml-error-color;
+  font-size: $mml-error-font-size;
+}

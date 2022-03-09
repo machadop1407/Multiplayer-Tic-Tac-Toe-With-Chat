@@ -1,0 +1,178 @@
+// Themes variable maps
+// -----------------------------------------------------------------------------
+
+$mml-theme-base: (
+  primary-accent: #006cff,
+  // might be used outside mml container
+  app-canvas: #fff,
+  text-high-emphasis: #0e1621,
+  text-mid-emphasis: #8a898e,
+  text-low-emphasis: #b2b1b5,
+  // might be used outside mml container
+  text-self: #fff,
+  text-pressed: #fff,
+  card-bg: #f2f2f2,
+  card-alt-bg: #fff,
+  // might be used outside mml container
+  card-self-bg: #41affc,
+  stroke: #e5e5e6,
+  stroke-low-emphasis: #f2f2f2,
+  shadow: 0px 2px 5px rgba(0, 0, 0, 0.15),
+) !default;
+
+$mml-theme-base-dark: (
+  primary-accent: #006cff,
+  app-canvas: #0e1723,
+  text-high-emphasis: #fff,
+  text-mid-emphasis: #868b91,
+  text-low-emphasis: #57606b,
+  text-self: #fff,
+  text-pressed: #fff,
+  card-bg: #152438,
+  card-alt-bg: #0e1723,
+  card-self-bg: #69727d,
+  stroke: #1b2d46,
+  stroke-low-emphasis: #1a232e,
+  shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
+) !default;
+
+$mml-theme-commerce-light: (
+  primary-accent: #005fff,
+  app-canvas: #fff,
+  text-high-emphasis: #202a3c,
+  text-mid-emphasis: #6c7a93,
+  text-low-emphasis: #b6bece,
+  text-self: #2c2c30,
+  text-pressed: #fff,
+  card-bg: #fff,
+  card-alt-bg: #f5f9ff,
+  card-self-bg: #b3cfff,
+  stroke: #eaeaea,
+  stroke-low-emphasis: #d9e1e6,
+  shadow: 0px 2px 5px rgba(0, 0, 0, 0.08),
+) !default;
+
+$mml-theme-commerce-dark: (
+  primary-accent: #004ccc,
+  app-canvas: #12151b,
+  text-high-emphasis: #e2e5e9,
+  text-mid-emphasis: #afc0df,
+  text-low-emphasis: #43527c,
+  text-self: #fff,
+  text-pressed: #fff,
+  card-bg: #1c1f27,
+  card-alt-bg: #0c0e12,
+  card-self-bg: #072355,
+  stroke: #004ccc,
+  stroke-low-emphasis: #1c1f27,
+  shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
+) !default;
+
+$mml-theme-livestream-light: (
+  primary-accent: #19a0ff,
+  app-canvas: #fff,
+  text-high-emphasis: #2c2c30,
+  text-mid-emphasis: #7ba0bb,
+  text-low-emphasis: #85cdff,
+  text-self: #2c2c30,
+  text-pressed: #fff,
+  card-bg: #fff,
+  card-alt-bg: #f1faff,
+  card-self-bg: #b3e0ff,
+  stroke: #bed5e4,
+  stroke-low-emphasis: #d9e1e6,
+  shadow: 0px 2px 5px rgba(190, 213, 228, 0.5),
+) !default;
+
+$mml-theme-livestream-dark: (
+  primary-accent: #0d47d9,
+  app-canvas: #000615,
+  text-high-emphasis: #fff,
+  text-mid-emphasis: #7889b6,
+  text-low-emphasis: #48526a,
+  text-self: #fff,
+  text-pressed: #fff,
+  card-bg: #010c29,
+  card-alt-bg: #00091f,
+  card-self-bg: #041b55,
+  stroke: #081e58,
+  stroke-low-emphasis: #041b55,
+  shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
+) !default;
+
+$mml-theme-messaging-light: (
+  primary-accent: #0283ff,
+  app-canvas: #fcfcfc,
+  text-high-emphasis: #0e1621,
+  text-mid-emphasis: #8c8c8c,
+  text-low-emphasis: #b3b3b3,
+  text-self: #0e1621,
+  text-pressed: #fff,
+  card-bg: #fff,
+  card-alt-bg: #f7f7f8,
+  card-self-bg: #ebebeb,
+  stroke: #d6d6d6,
+  stroke-low-emphasis: #ebebeb,
+  shadow: 0px 2px 5px rgba(0, 74, 174, 0.15),
+) !default;
+
+$mml-theme-messaging-dark: (
+  primary-accent: #0283ff,
+  app-canvas: #282a2d,
+  text-high-emphasis: #e8e8e9,
+  text-mid-emphasis: #898a8b,
+  text-low-emphasis: #626262,
+  text-self: #e8e8e9,
+  text-pressed: #e8e8e9,
+  card-bg: #3e4042,
+  card-alt-bg: #2d2e2f,
+  card-self-bg: #1a1c1e,
+  stroke: #252628,
+  stroke-low-emphasis: #242424,
+  shadow: 0px 4px 4px rgba(0, 0, 0, 0.1),
+) !default;
+
+$mml-theme-team-light: (
+  primary-accent: #4e1d9d,
+  app-canvas: #fff,
+  text-high-emphasis: #2e2c30,
+  text-mid-emphasis: #7c61a8,
+  text-low-emphasis: #9f8bbf,
+  text-self: #fff,
+  text-pressed: #fff,
+  card-bg: #fff,
+  card-alt-bg: #f9f5ff,
+  card-self-bg: #3e177e,
+  stroke: #eaeaea,
+  stroke-low-emphasis: #cccccc,
+  shadow: 0px 2px 5px rgba(0, 0, 0, 0.08),
+) !default;
+
+$mml-theme-team-dark: (
+  primary-accent: #5d02f0,
+  app-canvas: #16121b,
+  text-high-emphasis: #e5e2e9,
+  text-mid-emphasis: #c1afdf,
+  text-low-emphasis: #59437c,
+  text-self: #fff,
+  text-pressed: #fff,
+  card-bg: #201c27,
+  card-alt-bg: #0f0c12,
+  card-self-bg: #250755,
+  stroke: #4e00cc,
+  stroke-low-emphasis: #201c27,
+  shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
+) !default;
+
+$mml-themes: (
+  // 'base': $mml-theme-base, // this is the default
+  'base-dark': $mml-theme-base-dark,
+  'commerce-light': $mml-theme-commerce-light,
+  'commerce-dark': $mml-theme-commerce-dark,
+  'livestream-light': $mml-theme-livestream-light,
+  'livestream-dark': $mml-theme-livestream-dark,
+  'messaging-light': $mml-theme-messaging-light,
+  'messaging-dark': $mml-theme-messaging-dark,
+  'team-light': $mml-theme-team-light,
+  'team-dark': $mml-theme-team-dark
+) !default;

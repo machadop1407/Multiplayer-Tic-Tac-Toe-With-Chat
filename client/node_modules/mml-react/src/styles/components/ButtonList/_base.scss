@@ -1,0 +1,73 @@
+@include mml-component('btnlist') {
+  display: flex;
+
+  // Modifier: grounded (default)
+  // ---------------------------------------------------------------------------
+  &--grounded {
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    border-style: $mml-border-style;
+    border-width: $mml-btnlist-border-width;
+    @include mml-themed(border-color, $mml-btnlist-border-color);
+    @include mml-themed(background, $mml-btnlist-bg);
+
+    @include mml-component('btn') {
+      width: 100%;
+      margin: 0;
+      // reset all btn padding coherently (we might have a mml-btn--icon that use
+      // a different padding by default)
+      padding: $mml-btnlist__btn-padding-y $mml-btnlist__btn-padding-x;
+      // just apply a bottom border to inner buttons
+      border-width: 0 0 $mml-btnlist-border-width 0;
+      border-radius: 0;
+      @include mml-themed(border-color, $mml-btnlist-border-color);
+
+      // inherit background from parent because border radius is applied there
+      &:not(:hover):not(:focus) {
+        background: none;
+      }
+
+      &:last-child {
+        border-width: 0;
+      }
+
+      &--with-icon {
+        justify-content: flex-start;
+        @if $mml-btnlist__btn--with-icon-font-weight != $mml-btn-font-weight {
+          font-weight: $mml-btnlist__btn--with-icon-font-weight;
+        }
+
+        // only apply rules if we can't inherit them
+        @if $mml-btnlist__btn--with-icon-color != $mml-btn-color {
+          &:not(:hover):not(:focus) {
+            @include mml-themed(color, $mml-btnlist__btn--with-icon-color);
+          }
+        }
+      }
+    }
+  }
+
+  // Modifier: floating (through props)
+  // ---------------------------------------------------------------------------
+  &--floating {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    // make it fullwidth
+    @include mml-align-right() {
+      margin-left: calc(#{$mml-max-width-compensation} - #{$mml-btnlist__btn-margin-x});
+      margin-right: -#{$mml-btnlist__btn-margin-x};
+    }
+
+    @include mml-align-left() {
+      margin-left: -#{$mml-btnlist__btn-margin-x};
+      margin-right: calc(#{$mml-max-width-compensation} - #{$mml-btnlist__btn-margin-x});
+    }
+
+    @include mml-component('btn') {
+      margin: $mml-btnlist__btn-margin-y $mml-btnlist__btn-margin-x;
+    }
+  }
+}

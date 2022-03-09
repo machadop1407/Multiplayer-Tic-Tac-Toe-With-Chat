@@ -1,0 +1,13 @@
+@import '../Progress/base';
+
+@include mml-component('loading') {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $mml-loading-spacer;
+  font-size: $mml-loading-font-size;
+
+  &__text {
+    padding-left: $mml-loading-spacer;
+  }
+}

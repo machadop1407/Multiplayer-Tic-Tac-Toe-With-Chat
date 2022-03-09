@@ -1,0 +1,82 @@
+///
+/// stream-chat-react scoped style adjustments
+///
+.str-chat {
+  // fix .str-chat * font-family override
+  .mml-icon {
+    font-family: 'Material Icons';
+  }
+
+  // as .messaging.str-chat .str-chat__list:
+  @media screen and (max-width: 960px) {
+    .mml-align-left .mml-carousel {
+      margin-left: -10px;
+    }
+    .mml-align-right .mml-carousel {
+      margin-right: -10px;
+    }
+  }
+
+  // fixes the overall overflow/flex issues together with the rule below
+  .mml-container {
+    display: flex;
+  }
+
+  // fixes the overall overflow/flex issues together with the rule above
+  .mml-wrap {
+    display: block;
+    max-width: none;
+    // the max-width should match that to stream-chat-react
+    max-width: 345px; // as .str-chat__message-commerce-text-inner
+  }
+
+  // undo the negative margins that make the mml content to expand to the
+  // viewport edges
+  .mml-align-right .mml-btnlist--floating,
+  .mml-align-right .mml-carousel {
+    margin-left: auto;
+  }
+  .mml-align-left .mml-btnlist--floating,
+  .mml-align-left .mml-carousel {
+    margin-right: auto;
+  }
+
+  .mml-datepicker {
+    min-width: 198px;
+  }
+
+  // aligns the container to the stream-chat-react actions box which has some
+  // vertical space
+  &__message-commerce {
+    .mml-container {
+      margin-top: 5px; // as .str-chat__message-commerce__actions
+    }
+  }
+
+  // expand carousel to the edge of the screen, the horizontal padding is theme
+  // specific in stream-chat-react
+  &.messaging {
+    // as .messaging.str-chat .str-chat__list:
+    @media screen and (max-width: 960px) {
+      .mml-align-left .mml-carousel {
+        margin-right: -10px;
+      }
+      .mml-align-right .mml-carousel {
+        margin-right: -10px;
+      }
+    }
+  }
+
+  // contextual borders applied by className?
+  // &__li {
+
+  //   &--top {
+  //   }
+
+  //   &--middle {
+  //   }
+
+  //   &--bottom {
+  //   }
+  // }
+}

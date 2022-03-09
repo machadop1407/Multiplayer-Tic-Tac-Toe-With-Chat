@@ -1,0 +1,14 @@
+.str-chat__send-button {
+  margin-left: var(--xs-m);
+  border: 0;
+  background: 0;
+  outline: 0;
+
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
